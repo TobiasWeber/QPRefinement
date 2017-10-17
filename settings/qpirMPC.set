@@ -1,0 +1,57 @@
+# SoPlex version 2.0.1.3
+
+# primal feasibility tolerance
+# range [0,1], default 1e-10
+real:feastol = 1e-1
+
+# dual feasibility tolerance
+# range [0,1], default 1e-10
+real:opttol = 1e-1
+
+# maximum increase of scaling factors between refinements
+# range [1,1e+100], default 1e+25
+real:maxscaleincr = 1e+12
+
+#
+real:infty = 1e+100
+
+#real:timelimit = 0.0
+
+#
+real:qp_sparsity_threshold = 0.0
+
+#
+int:checkmode = 2
+
+#
+int:readmode = 1
+
+#
+int:syncmode = 1
+
+#
+int:iterlimit = 20000
+
+#
+int:qp_ref_max_num_backstep = 1
+
+# 3 oder 300
+int:reflimit = 0
+
+#
+int:qpoases_settings = 1
+
+#
+int:ratfac_minstalls = 30
+
+# real 0, auto 1, rational 2
+int:solvemode = 0
+
+# perform realiable resolve if solve fails
+bool:reliableresolve = 0
+
+# enable full li test for qpOASES options
+bool:litestfull = 0
+
+# transform to equality yes 1, no 0? should be one if solvemode rational and or precision below 10^-15
+bool:eqtrans = 0
