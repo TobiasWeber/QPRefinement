@@ -22,7 +22,7 @@ Afterwards you can run:
 
     make test SETTINGS=qpir_reliable TEST=marosmeszarossmall
 
-to check the installation and solve some small QP examples. To test the programm further you will need more QP test problems in `.qps` file format. You can download Maros and Meszaros QP library for that:
+to check the installation and solve some small QP examples. Two examples will have an "inconsistent" result while the rest is optimal. The two inconsistent mean that the high precision objective value calculated with QPRefinement is not consistent with the objective value reportet by Maros and Meszaros. To test the programm further you will need more QP test problems in `.qps` file format. You can download Maros and Meszaros QP library for that:
 
 [Maros and Meszaros QP library](http://www.cuter.rl.ac.uk/Problems/marmes.shtml "The Maros and Meszaros Convex Quadratic Programming Test Problem Set").
 
