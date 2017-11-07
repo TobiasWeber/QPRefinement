@@ -6,6 +6,7 @@ The QPs are solved by the QP-solver qpOASES which is interfaced by the software.
 
 ## Installation
 
+This instruction assumes that you have a linux operating system with GNU Multiple Precision Arithmetic Library installed.
 To use this sofware you need qpOASES. Follow the instructions on their download page:
 
 [qpOASES download](https://projects.coin-or.org/qpOASES "download qpOASES here and come back after installation (compiliation)").
