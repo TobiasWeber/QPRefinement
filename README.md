@@ -31,6 +31,9 @@ to check the installation and solve some small QP examples. Two examples will ha
 
 To solve any QP problem given as `.qps` file you can run:
 
-    bin/soplex -Q --loadset=settings/qpir_reliable.set /some/path/to/marosmeszaros/QPTEST.SIF
+    bin/soplex -Q --loadset=settings/qpir_reliable.set some/path/to/marosmeszaros/QPTEST.SIF
 
-Here we solve the trivial `QPTEST.SIF` (this is qps format!) problem vom the Maros and Meszaros QP library. To indicate qprefinement we use the -Q flag and we load the default qprefinement setting file `qpir_reliable.set`.
+Here we solve the trivial `QPTEST.SIF` (this is qps format!) problem vom the Maros and Meszaros QP library. To indicate qprefinement we use the -Q flag and we load the default qprefinement setting file `qpir_reliable.set`. In this manner you can also solve any of the already given QPs in the testset "marosmeszarossmall":
+
+    bin/soplex -Q --loadset=settings/qpir_reliable.set check/instances/QAFIRO.SIF
+
